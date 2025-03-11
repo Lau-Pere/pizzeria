@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzería Espacial</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 class="titulo">🍕 Pizzería Espacial</h1>
+
+  <form action="https://formsubmit.co/tu-correo@ejemplo.com" method="get" autocomplete="off">
+    <fieldset>
+      <legend>👤 Datos del Cliente</legend>
+      <label for="tratamiento">Tratamiento:</label>
+      <select name="tratamiento" id="tratamiento">
+        <option value="Sr">Sr.</option>
+        <option value="Sra">Sra.</option>
+        <option value="NB">NB</option>
+      </select>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>🛸 Pedido</legend>
+
+      <label for="pizza">Tipo de Pizza Espacial:</label>
+      <select name="pizza" id="pizza" required>
+        <option value="Pizza Marte">Pizza Marte</option>
+        <option value="Pizza Venus">Pizza Venus</option>
+        <option value="Pizza Saturno">Pizza Saturno</option>
+        <option value="Pizza Neptuno">Pizza Neptuno</option>
+        <option value="Pizza Júpiter">Pizza Júpiter</option>
+        <option value="Pizza Galáctica">Pizza Galáctica</option>
+      </select>
+
+      <p>Ingredientes extras:</p>
+      <label><input type="checkbox" name="extras" value="Queso Nebuloso"> Queso Nebuloso</label><br>
+      <label><input type="checkbox" name="extras" value="Champiñones Estelares"> Champiñones Estelares</label><br>
+      <label><input type="checkbox" name="extras" value="Anchoas Cósmicas"> Anchoas Cósmicas</label><br>
+      <label><input type="checkbox" name="extras" value="Olivas Galácticas"> Olivas Galácticas</label>
+
+      <p>¿Cómo querés tu pedido?</p>
+      <label><input type="radio" name="entrega" value="A domicilio" required> Enviar a casa</label><br>
+      <label><input type="radio" name="entrega" value="Recoger en local"> Venir a buscar</label>
+
+      <label for="comentarios">Comentarios:</label><br>
+      <textarea name="comentarios" id="comentarios" rows="4" placeholder="¿Algo especial para tu pedido?"></textarea>
+    </fieldset>
+
+    <button type="submit">🚀 Enviar Pedido</button>
+  </form>
+</body>
+</html>
+
+
+
